@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+body{
+  padding: 0;
+  margin: 0;
+  background: #40e0d0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#page{
+  background: #e9ecf1;
+  width: 1000px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top{
+  background: #ffffff;
+  width: 900px;
+  margin: 20px 50px;
+  display : flex;
+  justify-content: space-between;
+  border-bottom: 1px #d4d6dc solid;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top div{
+  width: 100px;
+}
+select{
+  outline: none;
+  border: none;
+  font-size : 16px;
+  margin-bottom: 10px;
+}
+#selectCoinKind{
+  width: 300px;
+}
+#count{
+  width: 100px;
+}
+.middle{
+  width: 900px;
+  margin: 10px 50px;
+  display : flex;
+  justify-content: space-between;
+}
+.graph, .coinConvertingUnit{
+  background: #ffffff;
+  width: 430px;
+  height: 500px;
+}
+.coinTradePrice{
+  width: 400px;
+  display: block;
+  color: red;
+  border-bottom: 1px #d4d6dc solid;
+}
+.coinTradePrice h1{
+  display: inline-block;
+  margin-left: 20px;
+}
+.coinTradePrice p{
+  color: #000000;
+  margin-left: 20px;
+  margin-top: -10px;
+}
+.coinChange{
+  color: red;
+  margin-right: 10px;
+  font-weight: bolder;
+}
+.coinConvertingUnit h2{
+  padding: 20px 50px;
+}
+.coinConvertingUnit > div{
+  width: 300px;
+  margin: 10px 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  border-bottom: 1px #d4d6dc solid;
+  margin-bottom: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.coinConvertingUnit>div input{
+  outline: none;
+  border: none;
+  margin-bottom: 10px;
 }
+.coinConvertingUnit p {
+  margin-top: -10px;
+}
+.coinConvertingUnit button{
+  background: blue;
+  color: #ffffff;
+  width: 300px;
+  height: 50px;
+  border-radius: 3px;
+  border: none;
+  margin: 10px 50px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
