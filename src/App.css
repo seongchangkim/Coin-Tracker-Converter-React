@@ -3,6 +3,12 @@ body{
   margin: 0;
   background: #40e0d0;
 }
+#loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 #page{
   background: #e9ecf1;
   width: 1000px;

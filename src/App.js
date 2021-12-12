@@ -87,7 +87,9 @@ function App() {
     <div>
       {
         loading ? 
-        <div>loading...</div> : 
+        <div id="loading">
+          <h1>Loading... Please Wait</h1>
+        </div> : 
         <div id="page">
           <div className="top">
             <div>
