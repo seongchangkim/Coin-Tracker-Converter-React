@@ -41,10 +41,17 @@ function App() {
     try{
       const json = await (await fetch(`https://crix-api-endpoint.upbit.com/v1/crix/candles/days/?code=CRIX.UPBIT.${selectCoinKind}&count=${count}`)).json();
     
-      setCoin(json);
+      const data = [];
+
+      for(let i = 0; i<json.length; i++){
+        data[json.length-1-i] = json[i];
+      }
+      
+      setCoin(data);
       setSeries(() => [{
         id : selectCoinKind,
-        data : json.map((coin) => {
+        data : data.map((coin) => {
+          console.log(coin);
               return {
                 x: coin.candleDateTime.slice(0,10),
                 y: coin.tradePrice
@@ -114,19 +121,19 @@ function App() {
               <ResponsiveLine
                 data={series}
                 margin={{top:50, right:50, bottom:200, left:100}}
-                xScale={{ type: 'point' }}
+                xScale={{ type: 'point', reverse: true }}
                 yScale={{ type: 'linear', min: 'auto', max: 'auto', stacked: true, reverse: false}}
                 yFormat=" >-.5f"
                 axisTop={null}
                 axisRight={null}
                 axisBottom={{
                   orient: 'bottom',
-                  tickSize: -2,
+                  tickSize: 5,
                   tickValues: 5,
                   tickPadding: 10,
                   tickRotation: 60,
                   legend: '날짜',
-                  legendOffset: 70,
+                  legendOffset: 75,
                   legendPosition: 'middle'
                 }}
                 axisLeft={{
