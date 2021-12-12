@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/coin-tracker-converter-react/static/css/main.a333bf57.chunk.css",
-    "main.js": "/coin-tracker-converter-react/static/js/main.2f8da404.chunk.js",
-    "main.js.map": "/coin-tracker-converter-react/static/js/main.2f8da404.chunk.js.map",
+    "main.css": "/coin-tracker-converter-react/static/css/main.66a47f8d.chunk.css",
+    "main.js": "/coin-tracker-converter-react/static/js/main.7ff2ffbe.chunk.js",
+    "main.js.map": "/coin-tracker-converter-react/static/js/main.7ff2ffbe.chunk.js.map",
     "runtime-main.js": "/coin-tracker-converter-react/static/js/runtime-main.906d2e68.js",
     "runtime-main.js.map": "/coin-tracker-converter-react/static/js/runtime-main.906d2e68.js.map",
     "static/js/2.8ae8e23e.chunk.js": "/coin-tracker-converter-react/static/js/2.8ae8e23e.chunk.js",
     "static/js/2.8ae8e23e.chunk.js.map": "/coin-tracker-converter-react/static/js/2.8ae8e23e.chunk.js.map",
     "index.html": "/coin-tracker-converter-react/index.html",
-    "static/css/main.a333bf57.chunk.css.map": "/coin-tracker-converter-react/static/css/main.a333bf57.chunk.css.map",
+    "static/css/main.66a47f8d.chunk.css.map": "/coin-tracker-converter-react/static/css/main.66a47f8d.chunk.css.map",
     "static/js/2.8ae8e23e.chunk.js.LICENSE.txt": "/coin-tracker-converter-react/static/js/2.8ae8e23e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.906d2e68.js",
     "static/js/2.8ae8e23e.chunk.js",
-    "static/css/main.a333bf57.chunk.css",
-    "static/js/main.2f8da404.chunk.js"
+    "static/css/main.66a47f8d.chunk.css",
+    "static/js/main.7ff2ffbe.chunk.js"
   ]
 }
