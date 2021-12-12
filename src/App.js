@@ -77,8 +77,10 @@ function App() {
   };
 
   useEffect(() => {
-    getCoinKindList();
-    getCoin();
+    setTimeout(() => {
+      getCoinKindList();
+      getCoin();
+    },1000);
     
     console.log(series);
   }, [selectCoinKind, count]);
