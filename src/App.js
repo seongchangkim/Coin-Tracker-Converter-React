@@ -65,22 +65,23 @@ function App() {
     }
   };
 
-  const getCoinKindList = async() => {
+  const getCoinKindList = () => {
     try{
-      const json = await (await fetch(`https://api.upbit.com/v1/market/all`)).json();
+      setTimeout(async() => {
+        const json = await (await fetch(`https://api.upbit.com/v1/market/all`)).json();
 
-      setCoinKindList(json);
-      setLoading(false);
+        setCoinKindList(json);
+        setLoading(false);
+      },1000);
+
     }catch(e){
       alert(e);
     }
   };
 
   useEffect(() => {
-    setTimeout(() => {
       getCoinKindList();
       getCoin();
-    },1000);
     
     console.log(series);
   }, [selectCoinKind, count]);
