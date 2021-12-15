@@ -39,7 +39,9 @@ function App() {
 
   const getCoin = async() => {
     try{
-      const json = await (await fetch(`https://crix-api-endpoint.upbit.com/v1/crix/candles/days/?code=CRIX.UPBIT.${selectCoinKind}&count=${count}`)).json();
+      const json = await (
+        await fetch(`https://crix-api-endpoint.upbit.com/v1/crix/candles/days/?code=CRIX.UPBIT.${selectCoinKind}&count=${count}`)
+      ).json();
     
       const data = [];
 
