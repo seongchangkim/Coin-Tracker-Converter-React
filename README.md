@@ -11,10 +11,16 @@
 ● 제작기간 : 2021.12.10 ~ 2021.12.12(3일)
 
 ### 개발 환경
+#### 1). Front-End
 > 1. HTML5<br>
 > 2. CSS3<br>
 > 3. JavaScript
 > 4. React 17.0.2
+> 5. npm 8.1.0
+> 6. nivo 0.74.0
+
+#### 2). IDE
+> 1. Visual Studio Code
 
 ## 주요 기능
 ### 1. 코인별 시세 분석
