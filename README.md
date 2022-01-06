@@ -6,7 +6,7 @@
 코인 종류별로 해당 코인의 그래프를 통해서 시세 분석 및 단위 변환을 할 수 있는 웹 애플리케이션입니다.
 
 <br>
-● 호스팅 : https://seongchangkim.github.io/coin-tracker-converter-react/
+● 호스팅 : https://seongchangkim.github.io/Coin-Tracker-Converter-React/
 <br>
 ● 제작기간 : 2021.12.10 ~ 2021.12.12(3일)
 
