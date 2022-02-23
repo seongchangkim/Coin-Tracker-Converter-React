@@ -171,7 +171,7 @@ function App() {
                 <input 
                   id="KRW"
                   type="number"
-                  value={inverted ? Math.round(inputNum * (coin[0].tradePrice === undefined ? 0 : coin[0].tradePrice)) : inputNum} 
+                  value={inverted ? inputNum * (coin[0].tradePrice === undefined ? 0 : coin[0].tradePrice) : inputNum} 
                   onChange={onInputNum}
                   disabled={inverted}
                 />
@@ -184,7 +184,7 @@ function App() {
                 <input 
                   id="coin"
                   type="number"
-                  value={inverted ? inputNum : Math.round(inputNum / (coin[0].tradePrice === undefined ? 0 : coin[0].tradePrice))} 
+                  value={inverted ? inputNum : inputNum / (coin[0].tradePrice === undefined ? 0 : coin[0].tradePrice)} 
                   onChange={onInputNum}
                   disabled={!inverted}
                 />
